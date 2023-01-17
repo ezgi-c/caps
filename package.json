@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "test": "jest",
+    "start": "node src/hub.js",
+    "lint": "prettier --check src/ && eslint src/"
+  },
+  "dependencies": {
+    "@types/jest": "^29.2.5",
+    "@types/node": "^18.11.18",
+    "chance": "^1.1.9",
+    "eslint": "^8.32.0",
+    "jest": "^29.3.1",
+    "prettier": "^2.8.3"
+  }
+}
