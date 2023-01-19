@@ -1,6 +1,6 @@
-# LAB - Class 11
+# LAB - Class 12
 
-## Project: Event Driven Applications
+## Project: Socket.io
 
 ### Author: Ezgi Coban
 
@@ -17,7 +17,9 @@
 
 #### How to initialize/run your application (where applicable)
 
-- `node src/hub.js`
+- `npm run hub`
+- `npm run driver`
+- `npm run vendor`
 
 <!-- #### How to use your library (where applicable) -->
 
@@ -26,9 +28,9 @@
 - How do you run tests?
     `npm test` , `npm run lint`
 - Any tests of note?
-    driver-handler and vendor-handler tests
+    hub connection, driver-handler and vendor-handler tests
 <!-- - Describe any tests that you did not complete, skipped, etc -->
 
 #### UML
 
-![uml diagram](lab11uml.png)
+![uml diagram](socketUML.png)
