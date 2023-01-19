@@ -1,6 +1,7 @@
-const { events, chance, EVENT_NAMES } = require('../eventPool');
+const { chance, EVENT_NAMES } = require('../utils');
+const { io } = require('socket.io-client');
 
-// Vendor sends a pickup event for a store
+const events = io('ws://localhost:3333');
 
 function sendPickup() {
   const event = {
@@ -14,7 +15,7 @@ function sendPickup() {
 }
 
 function acknowledgeDelivery(orderId) {
-  console.log('Vendor thanks you for the delivery!', orderId);
+  console.log('Vendor thank you for the delivery!', orderId);
 }
 
 function startVendor() {
@@ -23,14 +24,17 @@ function startVendor() {
 
   function ready() {
     sendPickup();
-    setTimeout(ready, chance.integer({ min: 1000, max: 5000 }));
+
+    setTimeout(ready, chance.integer({ min: 1000, max: 3000 }));
   }
   ready();
 }
 
 module.exports = {
-  startVendor,
   toTest: {
     sendPickup,
+    events,
   },
 };
+
+startVendor();
