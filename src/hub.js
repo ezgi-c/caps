@@ -22,5 +22,4 @@ function startEventServer() {
   console.log('Everything is started!');
 }
 
-
 module.exports = { startEventServer, io };

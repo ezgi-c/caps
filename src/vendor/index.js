@@ -1,4 +1,3 @@
-const  { startVendor } = require('./handler');
+const { startVendor } = require('./handler');
 
 startVendor();
-

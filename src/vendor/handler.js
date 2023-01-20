@@ -34,7 +34,6 @@ module.exports = {
   toTest: {
     sendPickup,
     events,
-    startVendor
+    startVendor,
   },
 };
-

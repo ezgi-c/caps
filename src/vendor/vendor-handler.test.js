@@ -26,5 +26,5 @@ test('Vendor sendPickup', () => {
       ),
     })
   );
-events.close();
+  events.close();
 });
