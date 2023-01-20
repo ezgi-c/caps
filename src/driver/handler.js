@@ -27,7 +27,6 @@ module.exports = {
     deliver,
     handlePickup,
     events,
+    startDriver,
   },
 };
-
-startDriver();

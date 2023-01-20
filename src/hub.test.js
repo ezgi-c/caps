@@ -5,5 +5,6 @@ describe('Event Server', () => {
     const onMock = jest.spyOn(io, 'on');
     startEventServer();
     expect(onMock).toHaveBeenCalled();
+    io.close();
   });
 });
