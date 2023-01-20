@@ -33,4 +33,6 @@ test('Driver handlePickup', () => {
 
   // Assert
   expect(emitMock).toHaveBeenCalledWith(EVENT_NAMES.delivered, '1234');
+
+  events.close();
 });
