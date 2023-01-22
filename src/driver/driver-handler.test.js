@@ -1,6 +1,5 @@
 const { EVENT_NAMES } = require('../utils');
-const {
-  toTest: { deliver, handlePickup, events },
+const {deliver, handlePickup, events 
 } = require('./handler');
 
 jest.useFakeTimers();
