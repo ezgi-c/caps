@@ -4,7 +4,8 @@
     "start": "concurrently npm:hub npm:driver npm:vendor",
     "hub": "node src/index.js",
     "driver": "node src/driver/index.js",
-    "vendor": "node src/vendor/index.js",
+    "flower-vendor": "node src/flower-vendor/index.js",
+    "widget-vendor": "node src/widget-vendor/index.js",
     "lint": "prettier --check src/ && eslint src/"
   },
   "dependencies": {
